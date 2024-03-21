@@ -1,0 +1,34 @@
+.loading{
+    background: maroon;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .text{
+    position: relative;
+    color: rgb(32, 204, 29);
+    font-size: 400px;
+    font-weight: 600;
+
+}
+#canvasContainer {
+    position: relative;
+}
+
+#Matrix, #TextOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Adjust z-index value to ensure TextOverlay is above Matrix */
+}
+#homePageBody {
+    background: maroon;
+}
