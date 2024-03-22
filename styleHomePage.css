@@ -132,7 +132,7 @@ body{
     left: 125px;
     bottom: -40px;
     font-weight: 2000;
-    
+     text-wrap: nowrap;
     
 }
  
