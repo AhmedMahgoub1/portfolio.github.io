@@ -10,6 +10,11 @@
         
     
 }
+@font-face {font-family: 'geo-light';
+    src: url('fonts/geo-extralight.woff2') format('woff2'), url('fonts/geo-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
 
 
 body{
