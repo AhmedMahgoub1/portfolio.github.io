@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleHomePage.css">
+    <title>Ahmed's page</title>
+</head>
+
+<body class="homePageBody">
+    <div class="bg">
+    <div id="canvasContainer2">
+        <canvas id="Home"></canvas>
+        <canvas id="TextOverlay2"></canvas>
+
+        <header class = "header">
+            <a href="#" class="logo" onclick="showImage()">Ahmed M.
+                <nav class ="navbar">
+                    <a href="#" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">My Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </a>
+        </header>
+        <style>
+            #visibleImage {
+              opacity: 0;
+              transition: opacity 1s ease-in-out;
+            }
+        
+            
+          </style>
+          <script>
+            function showImage() {
+              document.getElementById('visibleImage').style.opacity = 1;
+              setTimeout(function () {
+                document.getElementById('visibleImage').style.opacity = 0;
+              }, 3000);
+            }
+          </script>
+        <img id="visibleImage"src="file:///C:/Users/baher/Downloads/icegif-170.gif"class="firework">
+        <section class="home">
+            <div class="home-content">
+                
+                <h1 class="titleTxt"> Hey there, I am Ahmed Mahgoub</h1>
+                <h3>Aspiring Software Engineer</h3>
+                <p>
+                    This portfolio showcases my genuine passion for delving into the world of computer science and STEM. The sheer potential of technology has always fascinated me, prompting my ongoing quest for knowledge and improvement in these fields. From my hands-on involvement in robotics, where I've tackled programming challenges for both autonomous and driver-controlled systems, to the varied programming courses I've undertaken to refine my skills – each step has been a personal commitment.
+                    
+                    My ultimate aim is to apply the principles of computer science to make a real and meaningful impact on the evolving technological landscape. I thrive on the inherent challenges within the realm of computer science, viewing them not as obstacles but as stepping stones for personal and professional growth. To me, the continuous enhancement of technology is not just a goal but a pathway to a brighter future. I'm dedicated to contributing positively to the ever-expanding world of technology.</p>
+            <div class="btn-box">
+                <a href="about.html">About Me</a>
+                <a href="projects.html">My Projects</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+            </div>
+            
+            <img src="file:///C:/Users/baher/Downloads/5ddd2fbb-6a5f-4aaa-a3e9-289cfb6d2463.sketchpad-removebg-preview.png" class="profileImage" onclick="showImage()">
+        </section>
+    </div>
+    
+    <img src="file:///C:/Users/baher/Downloads/output-onlinegiftools.gif"class="sparks">
+</div>
+    <script src="./index.js"></script>
+
+   
+</body>
+</html>

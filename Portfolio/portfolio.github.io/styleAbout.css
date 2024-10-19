@@ -1,0 +1,258 @@
+
+/*sets the page margin and border*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: monospace;
+}
+
+
+/*Page background color*/
+body{
+        background: linear-gradient(#5c0808, #0a0000);
+        position: fixed;
+       
+}
+
+/*sparks for decorative effect*/
+.sparks{
+    object-position: 900px 50px;
+    height: 100px;
+    width: 1350px;
+    position: fixed;
+    
+}
+/*fireworks easter egg*/
+.firework {
+   position: fixed;
+   left: 125px;
+   width: 100px;
+   height: 50px;
+   z-index: 100;
+}
+
+/*profile image*/ 
+.profileImage{
+    position: relative;
+    
+}
+
+
+/*header box*/ 
+.header{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(107, 1, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*name on header*/
+.logo{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    z-index: 101;
+}
+
+/*Name animation on startup*/
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(107, 1, 1);
+    animation: showRight 1s ease forwards;
+    
+    
+}
+/*rest of stuff on header*/
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+/*hover/ current effect*/
+.navbar a:hover,
+.header a.active{
+    font-size: 18px;
+    color: crimson;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+/*base for all text besides header*/ 
+.home{
+    font-weight: 100;
+    color: wheat;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    text-align: center;
+    margin-top: -80px;
+    
+}
+
+/*hompage welcome*/
+.home h1{
+    font-size: 50px;
+    -webkit-text-stroke: 1px brown;
+    color: whitesmoke;
+}
+
+
+/*Base for all buttons*/
+.home-content .btn-box{
+    
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+  transform: translate(95%, 0%);
+    
+    
+}
+/*set up button positions*/
+.home-content p{
+    
+    font-size: 16px;
+    margin: 20px 0 60px;
+    
+}
+
+/*Button details*/
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: gray;
+    border: 2px solid orange;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+
+/*about button outside color*/
+.btn-box a:nth-child(1) {
+    background: black;
+    
+}
+
+
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+    overflow: hidden;
+
+}
+.btn-box a:hover:before{
+    width: 100%;
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+        
+        
+        
+    }
+    10%{
+        
+        transform: rotateY(180deg);
+        transform: translateY(-50px);
+    }
+    20%{
+        transform: translateY(0);
+        transform: rotateY(180deg);
+        
+    }
+    30%{
+        
+        transform: translateY(-50px);
+        
+    }
+    
+    40%{
+        transform: translateY(0);
+        
+    }
+    50%{
+        
+        
+        transform: translateY(-50px);
+        
+    }
+    60%{
+        transform: rotateY(180deg);
+        transform: translateY(0);
+        
+       
+        
+    }
+    70%{
+
+        
+        transform: rotateY(180deg);
+        transform: translateY(-50px);
+        
+    }
+    80%{
+        
+        
+        transform: translateY(0);
+    }
+    90%{
+        transform: translateY(-50px);
+        
+    }
+    
+    100%{
+        transform: translateY(0);
+        
+        
+    }
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+        
+    }
+}
+@keyframes showWelcome{
+    from { width: 0; }
+    to { width: 100%; }
+}

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleProject.css">
+    <title>Ahmed's page</title>
+</head>
+
+<body class="homePageBody">
+    <div class="bg">
+    <div id="canvasContainer2">
+        <canvas id="Home"></canvas>
+        <canvas id="TextOverlay2"></canvas>
+
+        <header class = "header">
+            <a href="#" class="logo" onclick="showImage()">Ahmed M.
+                <nav class ="navbar">
+                    <a href="page.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#"class="active">My Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </a>
+        </header>
+        <style>
+            #visibleImage {
+              opacity: 0;
+              transition: opacity 1s ease-in-out;
+            }
+        
+            
+          </style>
+          <script>
+            function showImage() {
+              document.getElementById('visibleImage').style.opacity = 1;
+              setTimeout(function () {
+                document.getElementById('visibleImage').style.opacity = 0;
+              }, 3000);
+            }
+          </script>
+          
+        <img id="visibleImage"src="file:///C:/Users/baher/Downloads/icegif-170.gif"class="firework">
+
+        <div class="title">
+          <h1>My Projects</h1>
+          <p>A sample of a few projects</p>
+        </div>
+        <div class="timeline">
+          <div class="check">
+            <div>
+            <h2>Completed MIT's inspire AI course</h2>
+            <img width="320" height="240" src="C:\Users\baher\Downloads\f24acd053e0346de66f7a22848aab2a4.jpg">
+          </div>
+      </div>
+      <div class="check">
+        <div>
+        <h2>Completed Harvard's cs50x course</h2>
+        <img width="320" height="240" src="C:\Users\baher\Downloads\IMG_0148.webp">
+      </div>
+  </div>
+          <div class="check">
+            <div>
+            <h2>3d Model of a trident</h2>
+            <img width="320" height="240" src="C:\Users\baher\Downloads\14433c234728819eda772cebf11ba26f-png.webp">
+          </div>
+      </div>
+          <div class="check">
+            <div>
+            <h2>Pokemon</h2>
+            <video width="320" height="240" controls>
+              <source src="C:\Users\baher\Videos\pokemon.mp4" type="video/mp4">
+            
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+          <div class="check">
+            <div>
+            <h2>Object Detection Algorithm</h2>
+            <video width="320" height="240" controls>
+              <source src="C:\Users\baher\OneDrive\Documents\ObjectDetection.mp4" type="video/mp4">
+            
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+          <div class="check">
+            <div>
+            <h2>Food Search</h2>
+            <video width="320" height="240" controls>
+              <source src="C:\Users\baher\Downloads\Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+            
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+          <div class="check">
+            <div>
+            <h2>Pong Ai</h2>
+            <video width="320" height="240" controls>
+              <source src="C:\Users\baher\Downloads\Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+            
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <img src="file:///C:/Users/baher/Downloads/output-onlinegiftools.gif"class="sparks">
+        </div>
+        
+</html>
